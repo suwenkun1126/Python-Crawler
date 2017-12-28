@@ -1,0 +1,34 @@
+Usage
+=====
+  scrapy parse [options] <url>
+
+Parse URL (using its spider) and print the results
+
+Options
+=======
+--help, -h              show this help message and exit
+--spider=SPIDER         use this spider without looking for one
+-a NAME=VALUE           set spider argument (may be repeated)
+--pipelines             process items through pipelines
+--nolinks               don't show links to follow (extracted requests)
+--noitems               don't show scraped items
+--nocolour              avoid using pygments to colorize the output
+--rules, -r             use CrawlSpider rules to discover the callback
+--callback=CALLBACK, -c CALLBACK
+                        use this callback for parsing, instead looking for a
+                        callback
+--depth=DEPTH, -d DEPTH
+                        maximum depth for parsing requests [default: 1]
+--verbose, -v           print each depth level one by one
+
+Global Options
+--------------
+--logfile=FILE          log file. if omitted stderr will be used
+--loglevel=LEVEL, -L LEVEL
+                        log level (default: DEBUG)
+--nolog                 disable logging completely
+--profile=FILE          write python cProfile stats to FILE
+--pidfile=FILE          write process ID to FILE
+--set=NAME=VALUE, -s NAME=VALUE
+                        set/override setting (may be repeated)
+--pdb                   enable pdb on failure
